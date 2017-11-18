@@ -1,0 +1,4 @@
+<launch>
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" />
+  <node name="grayscale" pkg="grayscale" type="grayscale_node" />
+</launch>
