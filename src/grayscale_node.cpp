@@ -27,7 +27,6 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "grayscale_node");
   ros::NodeHandle n;
   image_transport::ImageTransport it(n);
-  image_transport::Publisher pub = it.advertise("grayscale/image", 1);
   image_transport::Subscriber image_sub_;
   image_sub_ = it.subscribe("/usb_cam/image_raw", 1, publishGrayscale);
   ros::spin();
